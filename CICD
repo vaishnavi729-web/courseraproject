@@ -1,40 +1,354 @@
-
-✓ main Lint Code · 37582104812
-Triggered via push about 3 minutes ago
-
-JOBS
-✓ Lint JavaScript Files in 11s (ID 112663892575)
-  ✓ Set up job
-  ✓ Checkout Repository
-  ✓ Install Node.js
-  ✓ Install JSHint
-  ✓ Run Linter
-  ✓ Post Install Node.js
-  ✓ Post Checkout Repository
-  ✓ Complete job
-✓ Lint Python Files in 6s (ID 112663892820)
-  ✓ Set up job
-  ✓ Checkout Repository
-  ✓ Set up Python
-  ✓ Install dependencies
-  ✓ Run Linter
-  ✓ Post Set up Python
-  ✓ Post Checkout Repository
-  ✓ Complete job
-
-ANNOTATIONS
-! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v3, actions/setup-node@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Lint JavaScript Files: .github#2
-
-- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
-Lint JavaScript Files: .github#1
-
-! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v3, actions/setup-python@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Lint Python Files: .github#2
-
-- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
-Lint Python Files: .github#1
-
-
-For more information about a job, try: gh run view --job=<job-id>
-View this run on GitHub: https://github.com/vaishnavi729-web/courseraproject/actions/runs/37582104812
+Lint JavaScript Files	UNKNOWN STEP	﻿2026-10-07T06:33:00.9435506Z Current runner version: '2.337.0'
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9461115Z ##[group]Runner Image Provisioner
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9462038Z Hosted Compute Agent
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9462712Z Version: 20260901.588
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9463711Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9464441Z Build Date: 2026-09-01T19:56:44Z
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9465278Z Worker ID: {68b36f0b-adcd-41a4-85a1-5d9cf8e33a50}
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9466009Z Azure Region: westcentralus
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9466658Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9468323Z ##[group]Operating System
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9468958Z Ubuntu
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9469615Z 24.04.5
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9470128Z LTS
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9470673Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9471250Z ##[group]Runner Image
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9471855Z Image: ubuntu-24.04
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9472528Z Version: 20260927.320.1
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9474106Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9475812Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9476790Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9478080Z ##[group]GITHUB_TOKEN Permissions
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9480254Z Contents: read
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9480971Z Metadata: read
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9481537Z Packages: read
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9482674Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9484977Z Secret source: Actions
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9486038Z Cache mode: write
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9486744Z Prepare workflow directory
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9829878Z Prepare all required actions
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:00.9878545Z Getting action download info
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.3004641Z Download action repository 'actions/checkout@v3' (SHA:a37ce9120846195fa4ece8f58b268e6043cb2f26)
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.4574244Z Download action repository 'actions/setup-node@v3' (SHA:3235b876344d2a9aa001b8d1453c930bba69e610)
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7101449Z Complete job name: Lint JavaScript Files
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7872383Z ##[group]Run actions/checkout@v3
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7873549Z with:
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7874072Z   repository: vaishnavi729-web/courseraproject
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7877896Z   token: ***
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7878339Z   ssh-strict: true
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7878804Z   persist-credentials: true
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7879296Z   clean: true
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7879735Z   sparse-checkout-cone-mode: true
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7880247Z   fetch-depth: 1
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7880673Z   fetch-tags: false
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7881105Z   lfs: false
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7881515Z   submodules: false
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7881960Z   set-safe-directory: true
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7882458Z   allow-unsafe-pr-checkout: false
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.7883393Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8642379Z (node:2272) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8644596Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8736153Z Syncing repository: vaishnavi729-web/courseraproject
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8738117Z ##[group]Getting Git version info
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8738924Z Working directory is '/home/runner/work/courseraproject/courseraproject'
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8740470Z [command]/usr/bin/git version
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8834363Z git version 2.55.0
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8855501Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8869685Z Temporarily overriding HOME='/home/runner/work/_temp/af6a66ca-bc38-4078-bfdc-0b6a5dd98233' before making global git config changes
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8871115Z Adding repository directory to the temporary git global config as a safe directory
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8873565Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/courseraproject/courseraproject
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8924260Z Deleting the contents of '/home/runner/work/courseraproject/courseraproject'
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8927987Z ##[group]Initializing the repository
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.8931447Z [command]/usr/bin/git init /home/runner/work/courseraproject/courseraproject
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9062426Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9064222Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9065884Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9067148Z hint: call:
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9068027Z hint:
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9068767Z hint: 	git config --global init.defaultBranch <name>
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9069743Z hint:
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9070341Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9071270Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9071999Z hint:
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9072416Z hint: 	git branch -m <name>
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9073151Z hint:
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9074250Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9075576Z Initialized empty Git repository in /home/runner/work/courseraproject/courseraproject/.git/
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9079023Z [command]/usr/bin/git remote add origin https://github.com/vaishnavi729-web/courseraproject
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9134086Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9140998Z ##[group]Disabling automatic garbage collection
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9141723Z [command]/usr/bin/git config --local gc.auto 0
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9175652Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9176669Z ##[group]Setting up auth
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9184807Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9221107Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9592171Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9624023Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9856381Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9895440Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9896847Z ##[group]Fetching the repository
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:01.9904969Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +a1d130642cabe543a7a31aea80f2eb074fa25afa:refs/remotes/origin/main
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4400759Z remote: Enumerating objects: 5, done.        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4402652Z remote: Counting objects:  20% (1/5)        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4404176Z remote: Counting objects:  40% (2/5)        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4405310Z remote: Counting objects:  60% (3/5)        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4406359Z remote: Counting objects:  80% (4/5)        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4407454Z remote: Counting objects: 100% (5/5)        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4408484Z remote: Counting objects: 100% (5/5), done.        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4409562Z remote: Compressing objects:  50% (1/2)        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4410568Z remote: Compressing objects: 100% (2/2)        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4411669Z remote: Compressing objects: 100% (2/2), done.        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4413136Z remote: Total 5 (delta 0), reused 4 (delta 0), pack-reused 0 (from 0)        
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4523716Z From https://github.com/vaishnavi729-web/courseraproject
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4525467Z  * [new ref]         a1d130642cabe543a7a31aea80f2eb074fa25afa -> origin/main
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4531173Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4543719Z ##[group]Determining the checkout info
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4545300Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4546297Z ##[group]Checking out the ref
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4547114Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4597169Z Switched to a new branch 'main'
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4603117Z branch 'main' set up to track 'origin/main'.
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4609252Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4651558Z [command]/usr/bin/git log -1 --format='%H'
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4673593Z 'a1d130642cabe543a7a31aea80f2eb074fa25afa'
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4950371Z ##[group]Run actions/setup-node@v3
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4950951Z with:
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4951351Z   node-version: 20
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4951777Z   always-auth: false
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4952231Z   check-latest: false
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4956110Z   token: ***
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.4956534Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.6512142Z Attempting to download 20...
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.6678840Z (node:2355) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:02.6681023Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:03.3660894Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:04.0104717Z Extracting ...
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:04.0236618Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword -C /home/runner/work/_temp/0c7ed6fd-b171-4e7d-8514-22ee6ce6d0ac -f /home/runner/work/_temp/88251f49-5f2e-4e2e-9f63-4e06a54a0d29
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:05.0174420Z Adding to the cache ...
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:06.8650733Z ##[group]Environment details
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:07.1001220Z node: v20.20.2
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:07.1001990Z npm: 10.8.2
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:07.1002622Z yarn: 1.22.22
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:07.1003838Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:07.1259145Z ##[group]Run npm install jshint --global
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:07.1259634Z ^[[36;1mnpm install jshint --global^[[0m
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:07.1573457Z shell: /usr/bin/bash -e {0}
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:07.1573861Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.5735724Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.5759795Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8299979Z 
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8300672Z added 31 packages in 2s
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8301241Z 
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8301633Z 3 packages are looking for funding
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8302385Z   run `npm fund` for details
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8425914Z ##[group]Run find . -name "*.js" -not -path "*/node_modules/*" -exec jshint {} + || true
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8426582Z ^[[36;1mfind . -name "*.js" -not -path "*/node_modules/*" -exec jshint {} + || true^[[0m
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8427035Z ^[[36;1mecho "Linted all the js files successfully"^[[0m
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8491742Z shell: /usr/bin/bash -e {0}
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8492025Z ##[endgroup]
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8598966Z Linted all the js files successfully
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.8692091Z Post job cleanup.
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.9919737Z (node:2403) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:08.9921430Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0142443Z Post job cleanup.
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0855923Z (node:2411) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0856820Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0886865Z [command]/usr/bin/git version
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0921499Z git version 2.55.0
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0959564Z Temporarily overriding HOME='/home/runner/work/_temp/2c2d9d21-9e87-4ea5-ba7b-936725dbc305' before making global git config changes
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0961704Z Adding repository directory to the temporary git global config as a safe directory
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0965686Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/courseraproject/courseraproject
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.0998881Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.1029055Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.1249902Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.1274812Z http.https://github.com/.extraheader
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.1284265Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.1315349Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.1708463Z Cleaning up orphan processes
+Lint JavaScript Files	UNKNOWN STEP	2026-10-07T06:33:09.1995648Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v3, actions/setup-node@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Lint Python Files	UNKNOWN STEP	﻿2026-10-07T06:33:00.8718153Z Current runner version: '2.337.0'
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8744139Z ##[group]Runner Image Provisioner
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8745345Z Hosted Compute Agent
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8746327Z Version: 20260901.588
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8747019Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8747764Z Build Date: 2026-09-01T19:56:44Z
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8748427Z Worker ID: {f9e96703-9d64-4899-accd-af09fff0257b}
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8749134Z Azure Region: centralus
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8749820Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8751424Z ##[group]Operating System
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8752019Z Ubuntu
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8752585Z 24.04.5
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8753168Z LTS
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8753778Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8754306Z ##[group]Runner Image
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8754974Z Image: ubuntu-24.04
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8755612Z Version: 20260927.320.1
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8756812Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8758280Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8759160Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8760384Z ##[group]GITHUB_TOKEN Permissions
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8763119Z Contents: read
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8763845Z Metadata: read
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8764377Z Packages: read
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8765364Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8767658Z Secret source: Actions
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8768657Z Cache mode: write
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.8769498Z Prepare workflow directory
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.9073816Z Prepare all required actions
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:00.9122233Z Getting action download info
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.1517543Z Download action repository 'actions/checkout@v3' (SHA:a37ce9120846195fa4ece8f58b268e6043cb2f26)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.3233568Z Download action repository 'actions/setup-python@v4' (SHA:7f4fc3e22c37d6ff65e88745f38bd3157c663f7c)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5326484Z Complete job name: Lint Python Files
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5973458Z ##[group]Run actions/checkout@v3
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5974365Z with:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5974958Z   repository: vaishnavi729-web/courseraproject
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5978915Z   token: ***
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5979469Z   ssh-strict: true
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5979987Z   persist-credentials: true
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5980614Z   clean: true
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5981521Z   sparse-checkout-cone-mode: true
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5982122Z   fetch-depth: 1
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5982643Z   fetch-tags: false
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5983135Z   lfs: false
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5983595Z   submodules: false
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5984168Z   set-safe-directory: true
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5984728Z   allow-unsafe-pr-checkout: false
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.5985487Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6736924Z (node:2102) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6738340Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6815640Z Syncing repository: vaishnavi729-web/courseraproject
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6817709Z ##[group]Getting Git version info
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6818498Z Working directory is '/home/runner/work/courseraproject/courseraproject'
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6819721Z [command]/usr/bin/git version
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6958945Z git version 2.55.0
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6976622Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6988882Z Temporarily overriding HOME='/home/runner/work/_temp/c2237a1b-59e1-4251-afcc-a177f7d0af05' before making global git config changes
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6991952Z Adding repository directory to the temporary git global config as a safe directory
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.6993767Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/courseraproject/courseraproject
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7037214Z Deleting the contents of '/home/runner/work/courseraproject/courseraproject'
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7042524Z ##[group]Initializing the repository
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7045859Z [command]/usr/bin/git init /home/runner/work/courseraproject/courseraproject
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7128201Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7130165Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7131846Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7133208Z hint: call:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7133835Z hint:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7134588Z hint: 	git config --global init.defaultBranch <name>
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7135645Z hint:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7136821Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7138321Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7139461Z hint:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7140076Z hint: 	git branch -m <name>
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7140852Z hint:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7141992Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7143848Z Initialized empty Git repository in /home/runner/work/courseraproject/courseraproject/.git/
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7146182Z [command]/usr/bin/git remote add origin https://github.com/vaishnavi729-web/courseraproject
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7181762Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7183221Z ##[group]Disabling automatic garbage collection
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7184384Z [command]/usr/bin/git config --local gc.auto 0
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7211893Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7213456Z ##[group]Setting up auth
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7217282Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7243052Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7528840Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7552700Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7725027Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7757486Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7758414Z ##[group]Fetching the repository
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:01.7764363Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +a1d130642cabe543a7a31aea80f2eb074fa25afa:refs/remotes/origin/main
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0798489Z remote: Enumerating objects: 5, done.        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0799834Z remote: Counting objects:  20% (1/5)        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0800948Z remote: Counting objects:  40% (2/5)        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0802205Z remote: Counting objects:  60% (3/5)        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0803267Z remote: Counting objects:  80% (4/5)        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0804256Z remote: Counting objects: 100% (5/5)        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0805293Z remote: Counting objects: 100% (5/5), done.        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0806468Z remote: Compressing objects:  50% (1/2)        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0807423Z remote: Compressing objects: 100% (2/2)        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0808548Z remote: Compressing objects: 100% (2/2), done.        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0809702Z remote: Total 5 (delta 0), reused 4 (delta 0), pack-reused 0 (from 0)        
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0887845Z From https://github.com/vaishnavi729-web/courseraproject
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0888795Z  * [new ref]         a1d130642cabe543a7a31aea80f2eb074fa25afa -> origin/main
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0891804Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0892737Z ##[group]Determining the checkout info
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0894230Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0895093Z ##[group]Checking out the ref
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0897821Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0947066Z Switched to a new branch 'main'
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0952886Z branch 'main' set up to track 'origin/main'.
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0956801Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.0987580Z [command]/usr/bin/git log -1 --format='%H'
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1007043Z 'a1d130642cabe543a7a31aea80f2eb074fa25afa'
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1260626Z ##[group]Run actions/setup-python@v4
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1261401Z with:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1261913Z   python-version: 3.12
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1262496Z   check-latest: false
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1266267Z   token: ***
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1266733Z   update-environment: true
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1267339Z   allow-prereleases: false
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.1267886Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2494308Z ##[group]Installed versions
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2579465Z (node:2184) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2581449Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2582684Z Successfully set up CPython (3.12.14)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2584165Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2730397Z ##[group]Run python -m pip install --upgrade pip
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2731592Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2732274Z ^[[36;1mpip install flake8^[[0m
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2978076Z shell: /usr/bin/bash -e {0}
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2978672Z env:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2979347Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2980211Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2981317Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2982189Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2982956Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2983803Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.2984472Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:02.9206101Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (26.2.1)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.5725165Z Collecting flake8
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.6470257Z   Downloading flake8-7.4.1-py2.py3-none-any.whl.metadata (3.8 kB)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.6747131Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.6849189Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.7092720Z Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.7192160Z   Downloading pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.7452226Z Collecting pyflakes<4.1.0,>=4.0.0 (from flake8)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.7550845Z   Downloading pyflakes-4.0.2-py2.py3-none-any.whl.metadata (3.7 kB)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.7902275Z Downloading flake8-7.4.1-py2.py3-none-any.whl (57 kB)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.8133267Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.8251915Z Downloading pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.8373422Z Downloading pyflakes-4.0.2-py2.py3-none-any.whl (66 kB)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.8660197Z Installing collected packages: pyflakes, pycodestyle, mccabe, flake8
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.9738394Z 
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:03.9747242Z Successfully installed flake8-7.4.1 mccabe-0.7.0 pycodestyle-2.15.0 pyflakes-4.0.2
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0273963Z ##[group]Run find . -name "*.py" -exec flake8 {} +
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0274532Z ^[[36;1mfind . -name "*.py" -exec flake8 {} +^[[0m
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0275094Z ^[[36;1mecho "Linted all the python files successfully"^[[0m
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0318002Z shell: /usr/bin/bash -e {0}
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0318568Z env:
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0318991Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0319610Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0320319Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0320819Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0321729Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0322237Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0322741Z ##[endgroup]
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0404538Z Linted all the python files successfully
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.0504855Z Post job cleanup.
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.1689805Z (node:2242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.1781917Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.1886216Z Post job cleanup.
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2546721Z (node:2250) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2548200Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2573149Z [command]/usr/bin/git version
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2603291Z git version 2.55.0
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2632608Z Temporarily overriding HOME='/home/runner/work/_temp/10faf9d7-2b29-4200-9d5b-5424b04ffe34' before making global git config changes
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2633906Z Adding repository directory to the temporary git global config as a safe directory
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2635921Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/courseraproject/courseraproject
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2665556Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2692260Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2873132Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2892840Z http.https://github.com/.extraheader
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2900183Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.2929214Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.3217698Z Cleaning up orphan processes
+Lint Python Files	UNKNOWN STEP	2026-10-07T06:33:04.3462374Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v3, actions/setup-python@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
