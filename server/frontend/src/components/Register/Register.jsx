@@ -1,4 +1,3 @@
-```jsx
 import React, { useState } from 'react';
 import './Register.css';
 
@@ -13,28 +12,38 @@ const Register = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData((prevData) => ({
       ...prevData,
       [name]: value
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Registration form submission handler
-    console.log('Registering user:', formData);
-
-    alert('Registration form submitted successfully!');
-
-    // Add your backend API registration request here.
+    try {
+      const response = await fetch('/djangoapp/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      const data = await response.json();
+      if (data.status === "Registered") {
+        alert('Registration form submitted successfully!');
+        window.location.href = window.location.origin;
+      } else {
+        alert('Registration failed: ' + data.error);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error registering');
+    }
   };
 
   return (
     <div className="register-container">
       <h2>Sign Up</h2>
-
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -44,7 +53,6 @@ const Register = () => {
           onChange={handleChange}
           required
         />
-
         <input
           type="text"
           name="firstName"
@@ -53,7 +61,6 @@ const Register = () => {
           onChange={handleChange}
           required
         />
-
         <input
           type="text"
           name="lastName"
@@ -62,7 +69,6 @@ const Register = () => {
           onChange={handleChange}
           required
         />
-
         <input
           type="email"
           name="email"
@@ -71,7 +77,6 @@ const Register = () => {
           onChange={handleChange}
           required
         />
-
         <input
           type="password"
           name="password"
@@ -80,7 +85,6 @@ const Register = () => {
           onChange={handleChange}
           required
         />
-
         <button type="submit">Register</button>
       </form>
     </div>
@@ -88,4 +92,3 @@ const Register = () => {
 };
 
 export default Register;
-```

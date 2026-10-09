@@ -5,6 +5,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from .models import CarMake, CarModel
+from .populate import initiate
 
 from .restapis import (
     get_request,
@@ -160,15 +162,13 @@ def add_review(request):
 
 
 def get_cars(request):
-    # Replace this sample list with database-backed CarMake/CarModel
-    # records if those models have been implemented in your project.
-    car_models = [
-        {"CarMake": "Audi", "CarModel": "A6"},
-        {"CarMake": "Honda", "CarModel": "Civic"},
-        {"CarMake": "Toyota", "CarModel": "Camry"},
-        {"CarMake": "BMW", "CarModel": "X5"},
-    ]
-    return JsonResponse({"CarModels": car_models})
+    if CarMake.objects.count() == 0:
+        initiate()
+    car_models = CarModel.objects.select_related('car_make')
+    cars = []
+    for car_model in car_models:
+        cars.append({"CarModel": car_model.name, "CarMake": car_model.car_make.name})
+    return JsonResponse({"CarModels": cars})
 
 
 def analyze_review(request, text):

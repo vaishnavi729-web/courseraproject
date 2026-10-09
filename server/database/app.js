@@ -42,9 +42,12 @@ app.get('/fetchDealers/:state', async (req, res) => {
 // Express route to fetch dealer by a particular id (Task 10)
 app.get('/fetchDealer/:id', async (req, res) => {
     const dealer = dealerships_data.find(d => d.id == req.params.id);
-    res.json(dealer ? dealer : dealerships_data[0]);
+    if (dealer) {
+        res.json(dealer);
+    } else {
+        res.status(404).json({ error: 'Dealer not found' });
+    }
 });
-
 // Express route to insert review
 app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
     try {
@@ -75,7 +78,7 @@ app.get('/analyze/:text', async (req, res) => {
     try {
         const text = encodeURIComponent(req.params.text);
         const response = await fetch(
-            `http://127.0.0.1:5000/analyze/${text}`
+            `http://127.0.0.1:5050/analyze/${text}`
         );
 
         const result = await response.json();
