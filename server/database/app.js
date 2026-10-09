@@ -71,6 +71,23 @@ app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
     }
 });
 
+app.get('/analyze/:text', async (req, res) => {
+    try {
+        const text = encodeURIComponent(req.params.text);
+        const response = await fetch(
+            `http://127.0.0.1:5000/analyze/${text}`
+        );
+
+        const result = await response.json();
+        res.status(response.status).json(result);
+    } catch (error) {
+        console.error('Sentiment analysis failed:', error.message);
+        res.status(502).json({
+            error: 'Sentiment analyzer unavailable'
+        });
+    }
+});
+
 // Start the Express server
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
