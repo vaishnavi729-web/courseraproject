@@ -1,9 +1,10 @@
+```jsx
 import React, { useState } from 'react';
 import './Register.css';
 
 const Register = () => {
   const [formData, setFormData] = useState({
-    username: '',
+    userName: '',
     firstName: '',
     lastName: '',
     email: '',
@@ -11,26 +12,39 @@ const Register = () => {
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Registration form submission handler
     console.log('Registering user:', formData);
+
+    alert('Registration form submitted successfully!');
+
+    // Add your backend API registration request here.
   };
 
   return (
     <div className="register-container">
-      <h2>Sign-up</h2>
+      <h2>Sign Up</h2>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          name="username"
+          name="userName"
           placeholder="Username"
-          value={formData.username}
+          value={formData.userName}
           onChange={handleChange}
           required
         />
+
         <input
           type="text"
           name="firstName"
@@ -39,6 +53,7 @@ const Register = () => {
           onChange={handleChange}
           required
         />
+
         <input
           type="text"
           name="lastName"
@@ -47,14 +62,16 @@ const Register = () => {
           onChange={handleChange}
           required
         />
+
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="Email Address"
           value={formData.email}
           onChange={handleChange}
           required
         />
+
         <input
           type="password"
           name="password"
@@ -63,6 +80,7 @@ const Register = () => {
           onChange={handleChange}
           required
         />
+
         <button type="submit">Register</button>
       </form>
     </div>
@@ -70,3 +88,4 @@ const Register = () => {
 };
 
 export default Register;
+```
