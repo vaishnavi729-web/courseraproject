@@ -1,0 +1,5 @@
+System check identified no issues (0 silenced).
+October 10, 2026 - 17:15:38
+Django version 3.2.5, using settings 'djangoproj.settings'
+Starting ASGI/WSGI development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.

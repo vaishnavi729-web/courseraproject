@@ -25,7 +25,7 @@ app.get('/fetchReviews', async (req, res) => {
 // Express route to fetch reviews by a particular dealer
 app.get('/fetchReviews/dealer/:id', async (req, res) => {
     const dealerReviews = reviews_data.filter(r => r.dealership == req.params.id);
-    res.json(dealerReviews.length > 0 ? dealerReviews : reviews_data);
+    res.json(dealerReviews);
 });
 
 // Express route to fetch all dealerships (Task 9)
@@ -36,7 +36,7 @@ app.get('/fetchDealers', async (req, res) => {
 // Express route to fetch Dealers by a particular state (Task 11)
 app.get('/fetchDealers/:state', async (req, res) => {
     const stateDealers = dealerships_data.filter(d => d.state.toLowerCase() === req.params.state.toLowerCase());
-    res.json(stateDealers.length > 0 ? stateDealers : dealerships_data);
+    res.json(stateDealers);
 });
 
 // Express route to fetch dealer by a particular id (Task 10)
@@ -51,7 +51,14 @@ app.get('/fetchDealer/:id', async (req, res) => {
 // Express route to insert review
 app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
     try {
-        const data = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+        let data;
+        if (Buffer.isBuffer(req.body)) {
+            data = JSON.parse(req.body.toString('utf8'));
+        } else if (typeof req.body === 'string') {
+            data = JSON.parse(req.body);
+        } else {
+            data = req.body;
+        }
         const new_id = reviews_data.length > 0 ? Math.max(...reviews_data.map(r => r.id)) + 1 : 1;
 
         const newReview = {

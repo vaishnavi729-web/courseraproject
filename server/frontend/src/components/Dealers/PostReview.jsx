@@ -102,15 +102,15 @@ const PostReview = () => {
       <div className='input_field'>
       Car Make 
       <select name="cars" id="cars" onChange={(e) => setModel(e.target.value)}>
-      <option value="" selected disabled hidden>Choose Car Make and Model</option>
-      {carmodels.map(carmodel => (
-          <option value={carmodel.CarMake+" "+carmodel.CarModel}>{carmodel.CarMake} {carmodel.CarModel}</option>
+      <option value="" disabled hidden>Choose Car Make and Model</option>
+      {carmodels.map((carmodel, index) => (
+          <option key={index} value={carmodel.CarMake+" "+carmodel.CarModel}>{carmodel.CarMake} {carmodel.CarModel}</option>
       ))}
       </select>        
       </div >
 
       <div className='input_field'>
-      Car Year <input type="int" onChange={(e) => setYear(e.target.value)} max={2023} min={2015}/>
+      Car Year <input type="number" onChange={(e) => setYear(e.target.value)} max={2023} min={2015}/>
       </div>
 
       <div>
