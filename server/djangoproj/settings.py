@@ -29,7 +29,13 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'http://localhost:8000']
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'http://localhost:8000',
+    'https://*.proxy.cognitiveclass.ai',
+    'https://*.labs.skills.network',
+    'https://*.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],

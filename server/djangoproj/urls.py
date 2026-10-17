@@ -22,8 +22,10 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('djangoapp/', include('djangoapp.urls')),
+    path('about/', TemplateView.as_view(template_name="About.html")),
+    path('contact/', TemplateView.as_view(template_name="Contact.html")),
     # Serve React build for all other routes
-    re_path(r'^(?!djangoapp|admin|static|media).*$',
+    re_path(r'^(?!djangoapp|admin|static|media|about|contact).*$',
             TemplateView.as_view(template_name="index.html")),
     path('', TemplateView.as_view(template_name="index.html")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
